@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Digit-Span Test</title>
+    </head>
+    <body>
+        <div class="vertical-center">
+            <div class="container text-center">
+                <div class="number display-1">
+                    <span id="num"></span>
+                </div>
+                <div class="width-50" id="start">
+                    <h2>Digit-span test</h2>
+                    <p>Welcome to the digit-span test. We will show you a sequence of random digits from 0-9 which you need to recall. Every time you succesfully recall all the digits we increase the length of the sequence by one. The highest achieved sequence length is recorded and counts as your digit-span test score.</p>
+                    <p>Click the button below to start the test.</p>
+                    <button type="button" id="start-test" class="btn btn-primary">Start Test</button>
+                </div>
+                <div id="input">
+                    <p>Fill in the sequence of digits:</p>
+                    <div class="form-group">
+                        <input type="text" id="text-input" class="form-control width-50 text-center" required="required" autofocus>
+                    </div>
+                    <button type="submit" id="submit-answer" class="btn btn-primary">Submit</button>
+                </div>
+                <div id="results">
+                    <h2>Results</h2>
+                    <p>
+                        <span id="your-answer" style="color: red;"></span>
+                        <br>
+                        <span id="right-answer" style="color: green;"></span>
+                    </p>
+                    <p>Your highest digit-span score was:</p>
+                    <h2 class="display-1" id="final-score"></h2>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
